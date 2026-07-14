@@ -117,8 +117,25 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 0.78rem;
       }
+.profile-photo {
+  float: right;
+  width: 170px;
+  height: auto;
+  margin: 0 0 24px 40px;
+  border: 1px solid var(--line);
+}
 
-      @media (max-width: 680px) {
+.intro::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+      @media (max-width: 680px) {.profile-photo {
+  float: none;
+  display: block;
+  width: 145px;
+  margin: 0 0 28px;
+}
         body { font-size: 16px; }
         .page { width: min(100% - 30px, 860px); }
         .site-header {
@@ -152,8 +169,10 @@
         </nav>
       </header>
 
-      <section class="intro" aria-labelledby="intro-title">
-        <h1 id="intro-title">Lin Wang <span>王琳</span></h1>
+    <section class="intro" aria-labelledby="intro-title">
+  <img class="profile-photo" src="profile.jpg" alt="Portrait of Lin Wang">
+
+  <h1 id="intro-title">Lin Wang <span>王琳</span></h1>
         <p>
           I am a Postdoctoral Fellow in the
           <a href="https://stat-ds.sustech.edu.cn/" target="_blank" rel="noreferrer">Department of Statistics and Data Science</a>,
