@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Academic homepage of Lin Wang, Postdoctoral Fellow at SUSTech."
+    />
+    <title>Lin Wang | Probability and Stochastic Analysis</title>
+    <style>
+      :root {
+        --ink: #222;
+        --muted: #666;
+        --link: #245b92;
+        --line: #dedede;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        background: #fff;
+        color: var(--ink);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 17px;
+        line-height: 1.68;
+      }
+
+      a { color: var(--link); text-decoration: none; }
+      a:hover, a:focus-visible {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      .page {
+        width: min(860px, calc(100% - 44px));
+        margin: 0 auto;
+      }
+
+      .site-header {
+        min-height: 78px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+        border-bottom: 1px solid var(--line);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .site-name { color: var(--ink); font-weight: 600; white-space: nowrap; }
+      .site-name span { margin-left: 4px; font-weight: 400; color: var(--muted); }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 20px;
+        font-size: 0.86rem;
+      }
+      nav a { color: #444; }
+
+      .intro { padding-top: 72px; }
+      .intro h1 {
+        margin: 0 0 28px;
+        font-size: clamp(2.4rem, 7vw, 4rem);
+        font-weight: 400;
+        line-height: 1.12;
+        letter-spacing: -0.025em;
+      }
+      .intro h1 span {
+        margin-left: 10px;
+        color: var(--muted);
+        font-size: 0.52em;
+        letter-spacing: 0;
+      }
+      .intro p { max-width: 780px; margin: 0 0 18px; font-size: 1.06rem; }
+      .profile-links {
+        margin-top: 22px !important;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.92rem !important;
+      }
+
+      section { padding-top: 52px; scroll-margin-top: 18px; }
+      h2 {
+        margin: 0 0 18px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid var(--line);
+        font-size: 1.65rem;
+        font-weight: 400;
+      }
+      h3 { margin: 34px 0 12px; font-size: 1.2rem; font-weight: 600; }
+      p { margin: 0 0 12px; }
+      .plain-list { margin: 0; padding-left: 24px; }
+      .paper-list { margin: 0; padding-left: 28px; }
+      .paper-list li { padding-left: 8px; margin-bottom: 18px; }
+      .paper-list p { margin: 0; }
+      .paper-list strong { font-weight: 600; }
+
+      .teaching-list { margin: 0; padding: 0; list-style: none; }
+      .teaching-list li {
+        display: grid;
+        grid-template-columns: 116px 1fr;
+        gap: 18px;
+        padding: 7px 0;
+      }
+      .teaching-list > li > span,
+      .instructor { color: var(--muted); font-size: 0.92rem; }
+      .teaching-list p { margin: 0; }
+
+      #contact { padding-bottom: 54px; }
+      footer {
+        padding: 18px 0 36px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.78rem;
+      }
+
+      @media (max-width: 680px) {
+        body { font-size: 16px; }
+        .page { width: min(100% - 30px, 860px); }
+        .site-header {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 10px;
+          padding: 18px 0 16px;
+        }
+        nav { justify-content: flex-start; gap: 8px 18px; }
+        .intro { padding-top: 52px; }
+        .intro h1 span { display: block; margin: 8px 0 0; }
+        section { padding-top: 44px; }
+        .teaching-list li { display: block; padding: 8px 0; }
+        .teaching-list > li > span { display: block; margin-bottom: 2px; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="site-header" id="top">
+        <a class="site-name" href="#top">Lin Wang <span>王琳</span></a>
+        <nav aria-label="Primary navigation">
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section class="intro" aria-labelledby="intro-title">
+        <h1 id="intro-title">Lin Wang <span>王琳</span></h1>
+        <p>
+          I am a Postdoctoral Fellow in the
+          <a href="https://stat-ds.sustech.edu.cn/" target="_blank" rel="noreferrer">Department of Statistics and Data Science</a>,
+          <a href="https://www.sustech.edu.cn/en/" target="_blank" rel="noreferrer">Southern University of Science and Technology</a>,
+          working with
+          <a href="https://faculty.sustech.edu.cn/shaoqm/en/" target="_blank" rel="noreferrer">Professor Qi-Man Shao</a>.
+        </p>
+        <p>
+          I received my Ph.D. in Probability and Mathematical Statistics from the
+          <a href="http://www.amss.ac.cn/" target="_blank" rel="noreferrer">Academy of Mathematics and Systems Science, Chinese Academy of Sciences</a>.
+          Before that, I received my B.S. in Mathematics and Applied Mathematics from
+          <a href="https://www.tsxt.sdu.edu.cn/" target="_blank" rel="noreferrer">Taishan College, Shandong University</a>.
+        </p>
+        <p>
+          My research interests are in probability theory and stochastic analysis.
+          My earlier work focused mainly on stochastic partial differential equations.
+          More recently, I have become interested in asymptotic theory in probability
+          and statistics, which I am continuing to study.
+        </p>
+        <p class="profile-links">
+          <a href="Lin-Wang-CV.pdf" target="_blank" rel="noreferrer">Curriculum Vitae (PDF)</a>
+          <!-- Add verified Google Scholar and ResearchGate links here later. -->
+        </p>
+      </section>
+
+      <section id="research">
+        <h2>Research interests</h2>
+        <ul class="plain-list">
+          <li>Probability theory and stochastic analysis</li>
+          <li>Stochastic differential equations and stochastic PDEs</li>
+          <li>Asymptotic theory in probability and statistics</li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <ol class="paper-list">
+          <li>
+            <p>
+              Lin Wang and Zhengyan Wu.
+              <strong>Probabilistic approaches to the energy equality in forced surface Quasi-Geostrophic equations</strong>.
+              <em>Stochastic Partial Differential Equations: Analysis and Computations</em> (2025).
+              <a href="https://doi.org/10.1007/s40072-025-00405-9" target="_blank" rel="noreferrer">[DOI]</a>
+              · <a href="https://arxiv.org/abs/2411.04500" target="_blank" rel="noreferrer">[arXiv]</a>
+            </p>
+          </li>
+        </ol>
+
+        <h3>Preprints</h3>
+        <ol class="paper-list">
+          <li>
+            <p>
+              Lin Wang and Zhengyan Wu.
+              <strong>Learning Equilibrium Fluctuation Expansions from Overdamped Langevin Dynamics</strong>.
+              <a href="https://arxiv.org/abs/2604.04100" target="_blank" rel="noreferrer">[arXiv:2604.04100]</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              Chang-Song Deng, Lin Wang, and Lihu Xu.
+              <strong>Quantitative Bounds for High-dimensional Entropic Central Limit Theorem</strong>.
+              <a href="https://arxiv.org/abs/2604.05861" target="_blank" rel="noreferrer">[arXiv:2604.05861]</a>
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="experience">
+        <h2>Academic experience</h2>
+        <ul class="teaching-list">
+          <li>
+            <span>Feb.–Dec. 2025</span>
+            <p>
+              Visiting Student,
+              <a href="https://www.fst.um.edu.mo/" target="_blank" rel="noreferrer">Faculty of Science and Technology, University of Macau</a><br />
+              <span class="instructor">Host:
+                <a href="https://www.fst.um.edu.mo/personal/lihuxu/" target="_blank" rel="noreferrer">Professor Lihu Xu</a>
+              </span>
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <ul class="teaching-list">
+          <li>
+            <span>Spring 2024</span>
+            <p>Teaching Assistant, <strong>Calculus II</strong>, University of Chinese Academy of Sciences<br />
+              <span class="instructor">Instructor: Prof. Zhao Dong (董昭)</span>
+            </p>
+          </li>
+          <li>
+            <span>Fall 2023</span>
+            <p>Teaching Assistant, <strong>Calculus I</strong>, University of Chinese Academy of Sciences<br />
+              <span class="instructor">Instructor: Prof. Zhao Dong (董昭)</span>
+            </p>
+          </li>
+          <li>
+            <span>Spring 2020</span>
+            <p>Teaching Assistant, <strong>Probability</strong>, Taishan College, Shandong University<br />
+              <span class="instructor">Instructor: Prof. Zhang Chen (陈章)</span>
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:wanglin2021@amss.ac.cn">wanglin2021@amss.ac.cn</a></p>
+      </section>
+
+      <footer><p>Last updated: July 2026</p></footer>
+    </main>
+  </body>
+</html>
